@@ -11,10 +11,6 @@
     let randomImageSource2 = "images/"+randomDiceImage2; 
     // Përditëso imazhet e zarëve për secilin lojtar
   
-
-
-
-
 var image1 = document.querySelectorAll("img")[0];
 
 image1.setAttribute("src", randomImageSource1);
