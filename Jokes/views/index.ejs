@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shakat</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <h1>Shakat</h1>
+    <ul>
+      <% jokes.forEach(joke => { %>
+      <li>
+        <% if (joke.type === 'single') { %> <%= joke.joke %> <% } else { %>
+        <strong>Ky shak ka dy pjesë:</strong>
+        <p>
+          <em>Pjesa 1:</em> <%= joke.setup %>
+          <br />
+          <em>Pjesa 2:</em> <%= joke.delivery %>
+        </p>
+        <% } %>
+      </li>
+      <% }); %>
+    </ul>
+  </body>
+</html>
